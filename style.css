@@ -36,13 +36,13 @@ body {
 }
 
 /* main  */
-.container {
+main {
     max-width: 1320px;
     margin: 0 auto;
     height: 100vh;
 }
 
-.wrapper {
+main > section {
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -51,12 +51,12 @@ body {
     margin: 0 2rem;
 }
 
-.header img {
+main > section > header > img {
     width: 190px;
     padding-bottom: 20px;
 }
 
-.main {
+article {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -137,7 +137,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .main{
+    article {
         flex-direction: column;
         text-align: center;
 
